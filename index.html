@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Eisnerj.github.com by eisnerj</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="javascripts/respond.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!--[if lt IE 8]>
+    <link rel="stylesheet" href="stylesheets/ie.css">
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+  </head>
+  <body>
+      <div id="header">
+        <nav>
+          <li class="fork"><a href="https://github.com/eisnerj">View On GitHub</a></li>
+        </nav>
+      </div><!-- end header -->
+
+    <div class="wrapper">
+
+      <section>
+        <div id="title">
+          <h1>Eisnerj.github.com</h1>
+          <p>ERSA Website</p>
+          <hr>
+          <span class="credits left">Project maintained by <a href="https://github.com/eisnerj">eisnerj</a></span>
+          <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="http://twitter.com/#!/michigangraham">mattgraham</a></span>
+        </div>
+
+        <p><img src="http://fc03.deviantart.net/fs42/f/2009/084/5/2/New_York_Black_And_White_by_Morgadu.jpg" alt="NYC Pic"></p>
+
+<h3>Welcome to ERSA!</h3>
+
+<p>Earnings Report Sentiment Analysis, or ERSA for short, provides users with an easy way to visualize the trending focus of specific companies. By comparing the word counts for each word between two earnings call transcripts, one can develop a stronger understanding of the trajectory of a specific company over time.</p>
+
+<p><img src="http://imageshack.us/a/img825/9775/screenshot20130322at125.png" alt="BWLD 3Q12"><img src="http://imageshack.us/a/img189/9775/screenshot20130322at125.png" alt="BWLD 4Q12"></p>
+
+<p>Here are two, recent earnings call transcripts from the restaurant chain Buffalo Wild Wings. You see the first is from 3Q12 and the second is from 4Q12 – so just one quarter apart. Running ERSA on these two documents results in the following display.</p>
+
+<p><img src="http://imageshack.us/a/img842/3294/bwldcloud.png" alt="BWLD Cloud"></p>
+
+<p>The red words are those that had higher counts in the document from Q3 and the green words are those that had higher counts in the document from Q4. But also make note of the different size fonts for each color. ERSA scales each word based on how much more frequently it appears in one text relative to another. From the first document, we see words like experience, model, make, service. While in the second, football, third, Olympics, gold. So there’s a very clear, different focus between these two documents.</p>
+
+<p>While this information visualization is interesting on its own, the more important application of ERSA is found in the linguistic features that can be extracted from the data structure that creates this word cloud. The largest words can provide investors with insight into the trajectory of a company, as well as departures from previous company initiatives. Furthermore, ERSA can use many of these texts in order to train a Bayesian model on which future reports can be tested for sentiment. This sentiment can then be tracked using time series regression against company performance in order to predict future performance of a stock.</p>
+
+<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
+
+<h3>Authors and Contributors</h3>
+
+<p>Josh Eisner is the author of this page and the ERSA code. In creating the ERSA code, Josh borrowed code from pytagcloud at <a href="https://github.com/atizo/PyTagCloud">https://github.com/atizo/PyTagCloud</a>.</p>
+      </section>
+
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+    
+  </body>
+</html>
